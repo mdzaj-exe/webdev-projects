@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    background-color: rgb(100,100,255);
+    background-image: url("https://images.alphacoders.com/102/thumb-1920-1026345.jpg");
+    color: rgba(230,56,205,.9);
+    font-family:Tahoma;
+    font-size:18px;
+    margin:0px;
+    
+  }
+  
+  h1,p{
+    margin:6px auto;
+    text-align: center;
+  }
+  
+  form{
+    background-color:rgba(10,10,10,.5);
+    width:100%;
+    min-width:300px;
+    max-width:500px;
+    margin:20px auto;
+
+    
+  }
+  
+  fieldset{
+    border:none;
+    padding:5px;
+    border-bottom:10px solid;
+    border-color:rgba(92,59,92,.8);
+    text-align:center;
+  }
+  fieldset:last-of-type{
+    border-bottom:none;
+  }
+  
+  label{
+    display:block;
+    margin:6px;
+  }
+  .cb_label{
+    width:13px;
+  }
+  input,textarea,select{
+    margin-bottom:10px;
+    width:100%;
+    padding:3px;
+    min-height:20px;
+    text-align:center;
+  }
+  input,textarea{
+    background-color:#6E6563;
+    border:1px solid #EBE9E8;
+  }
+  .inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align:middle;
+  }
+  input[type="submit"]{
+    display:block;
+    width:10%;
+    margin:1em auto;
+    min-width:300px;
+    text-align:center;
+    padding: 10px 30px 10px 30px;
+    
+    
+  }
+  ::placeholder{
+    color:#B395AF;
+    
+  }

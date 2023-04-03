@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve!</p>
+    <form id="survey-form" method="post" >
+      <fieldset>
+        <label for="name" id="name-label">Enter Your  Name: <input id="name" name="name-label" type="text" placeholder="John Doe"required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email-label" type="email" placeholder="j0hnDoe@email.com"required /></label>
+        <label for="number" id="number-label">Enter Your Number: <input id="number" name="number-label" type="number" min="0" max="100" placeholder="123-456-7890" required /></label>
+      </fieldset>
+      <fieldset>
+        <label>
+        Where did you hear about us?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">YouTube</option>
+          <option value="2">TikTok</option>
+          <option value="3">Instagram</option>
+          <option value="4">Other</option>
+        </select>
+        </label>
+        Rate your experience!
+        <label for="poor-label">Poor <input id="poor-label" name="rate-button" type="radio" value="1" class="inline"></label>
+        <label for="average-label">Average <input id="average-label" name="rate-button" type="radio" value="2" class="inline"></label>
+        <label for="neutral-label">Neutral <input id="neutral-label" name="rate-button" type="radio" value="3" class="inline"></label>
+        <label for="good-label">Good <input id="good-label" name="rate-button" type="radio" value="4" class="inline"></label>
+        <label for="great-label">Great <input id="great-label" name="rate-button" type="radio" value="5" class="inline"></label>
+
+        Which of the following devices do you own and browse websites on?
+        <label for="iPhone">iPhone <input class="cb_label" id="checkbox" name="iPhone" value="iPhone" type="checkbox"></label>
+        <label for="Samsung">Samsung <input class="cb_label" id="checkbox" name="Samsung" value="Samsung" type="checkbox"></label>
+        <label for="Android">Android <input class="cb_label" class="cb_label" id="checkbox" name="Android" value="Android" type="checkbox"></label>
+        <label for="PC">PC <input class="cb_label" id="checkbox" name="PC" value="PC" type="checkbox"></label>
+        <label for="Other">Other <input class="cb_label" id="checkbox" name="Other" value="Other" type="checkbox"></label>
+        <label>Any additional comments?<textarea></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit">
+      </form>
+  </body>
+</html>
