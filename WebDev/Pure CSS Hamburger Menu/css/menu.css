@@ -1,0 +1,69 @@
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.toggler{
+    position:absolute;
+    top: .5rem;
+    left: .5rem;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: absolute;
+    top:.5rem;
+    left: .5rem;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: #111;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger>div{
+    position: absolute;
+    top: 1.7rem;
+    left: .75rem;
+    width:60%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff44f;
+    transition: .4s;
+}
+
+.hamburger>div:before, .hamburger>div:after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff44f;
+    transition: .4s;
+}
+
+.hamburger>div:before{
+    top: -10px;
+
+}
+
+.hamburger>div::after{
+    top:10px;
+}
+
+.toggler:checked + .hamburger>div{
+    transform: rotate(135deg);
+}
+
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after {
+    transform: rotate(90deg);
+    top:0;
+}
