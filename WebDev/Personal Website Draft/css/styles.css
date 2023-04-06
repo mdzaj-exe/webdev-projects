@@ -9,6 +9,12 @@ body{
     /*background-color: #333;*/
     font-family: "Roboto", sans-serif;
     overflow: hidden;
+    background-color: #111;
+    
+}
+
+.menu-container{
+    position:absolute;
 }
 
 .containerA{
@@ -180,7 +186,8 @@ body{
 
 .skill-icon{
     width:50px;
-    z-index: 2;
+    
+    z-index: 1;
 }
 
 @media screen and (max-width: 650px){

@@ -24,7 +24,7 @@
     width: 60px;
     height:60px;
     border-radius: 50%;
-    background-color: #111;
+    background-color: #165d69;
     justify-content: center;
     align-items: center;
     z-index: 2;
@@ -102,17 +102,17 @@
 
 .menu > div{
     position: absolute;
-    width: 1600px;
-    height: 1600px;
-    border-radius:50%;
+    width: 100vw;
+    height: 100vh;
     top:50%;
     left:50%;
     transform: translateX(-150%) translateY(-50%);
-    background-color: rgba(80, 69, 69, 0.863);
+    background-color: rgba(23, 140, 148, 0.863);
     transition: .6s;
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
