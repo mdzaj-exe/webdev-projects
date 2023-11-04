@@ -1,0 +1,181 @@
+/*
+*{
+    margin:0;
+    padding:0;
+}
+*/
+
+body{
+    color:cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /*or use below*/
+    /* font:normal, 16px, Arial, Helvetica, sans-serif; */
+    line-height: 1.6em;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:grey;
+}
+
+.box-1{
+    background-color: grey;
+    color:#fff;
+    border: 5px cyan solid;
+    border-width: 1%;
+    padding:20px;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: .2em;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+.clr{
+    clear:both;
+    /*clears floats above it*/
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}
+.button:hover{
+    background:cyan;
+    color:#fff;
+}
+
+.box-2{
+    border:3px dotted #ccc;
+    padding:20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius:15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom:dotted 1px #333;
+    list-style-image: url('../images/checkmark.jpg')
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+#main-block{
+    float:left;
+    width: 70%;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    background-color: #333;
+    float:right;
+    width:30%;
+    color:#fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 300px;
+    background-image:url(../images/gradient.jpg);
+}
+
+.p-box h1{
+    position:relative;
+    top:100px;
+    left:200px;
+}
+.p-box h2{
+    position:relative;
+    top: 300px;
+    left:100px;
+}
+
+.fix-me{
+    position:fixed;
+    top:400px;
+}
+
+.my-list li:first-child{
+    background:red;
+}
+
+.my-list li:last-child{
+    background:blue;
+}
+
+.my-list li:nth-child(5){
+    background:yellow;
+}
+
+.my-list li:nth-child(even){
+    background:grey;
+}
