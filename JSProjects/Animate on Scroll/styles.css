@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 body {
   background-color: #131316;
   color: #ffffff;
@@ -7,11 +14,99 @@ body {
   margin: 0;
 }
 
+h1{
+  font-size: 2.5rem;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 20px;
+}
+
 section {
   display: grid;
   place-items: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(to right, rgb(199, 125, 21) 40, 32), rgb(194, 62, 21), 251, 143));
+  padding: 10px;
+  border: #131316;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+li a:hover {
+  border-bottom: 2px solid #ddd;
+}
+
+.profile {
+  display: inline-flex;
+  float: right;
+  max-width: 20%;
+  height: auto;
+  box-shadow: 0 0 10px 5px rgba(107, 101, 101, 0.5);
+  padding: 5px;
+}
+
+.icon {
+  min-width: 5vw;
+  width: 15vw;
+  max-width: calc(25% - 20px); /* Adjust the percentage and subtract margin */
+  height: auto;
+  overflow: auto;
+  margin: 40px;
+  box-shadow: 0 0 10px 5px rgba(107, 101, 101, 0.5);
+  padding: 5px;
+  flex: 1 1 auto;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.skill-box img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title:before {
+  width: 35px;
+}
+
+.skill-box:hover .img {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .hidden {

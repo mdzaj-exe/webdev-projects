@@ -9,29 +9,176 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
   </head>
-
+  <header>
+    <nav class="navbar">
+      <h1 class="title">Header text here</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#prExamples">Project Examples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <section class="hidden sec">
-      <h1>Hello World</h1>
-      <p>This is my website</p>
+    <section class="hidden" id="home">
+      <h1>[Profile Text Here]</h1>
+      <img
+        src="imgs/blob.jpg"
+        alt="A 3D render of a blob-like gem"
+        class="profile"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque
+        quibusdam, facilis esse mollitia doloremque sapiente deserunt error
+        provident officiis asperiores fuga magni nulla saepe ut tempore
+        consectetur consequatur id? Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Non commodi ullam soluta obcaecati corporis excepturi
+        tenetur. Voluptas rerum, rem quisquam ipsum sit ex provident impedit
+        quis! Saepe aliquid adipisci explicabo.
+      </p>
     </section>
-
-    <section class="hidden">
-      <h2>Buy my product</h2>
-      <p>The things you own end up own end up owning you</p>
+    <section class="hidden" id="projects">
+      <h1>Projects</h1>
+      <div class="icon-container">
+        <img
+          src="imgs/blob.jpg"
+          alt="3D abstract of a blob-like gem."
+          class="icon hidden"
+        />
+        <img
+          src="imgs/cubes.jpg"
+          alt="A few pyramids and spheres."
+          class="icon hidden"
+        />
+        <img
+          src="imgs/glowcube.jpg"
+          alt="A construction of a cube that glows."
+          class="icon hidden"
+        />
+      </div>
+      <div class="icon-container">
+        <img src="imgs/sphere.jpg" alt="Glass sphere" class="icon hidden" />
+        <img
+          src="imgs/purplerend.jpg"
+          alt="A 3D rendered purple spiral."
+          class="icon hidden"
+        />
+        <img
+          src="imgs/triangle.jpg"
+          alt="A glass pyramid"
+          class="icon hidden"
+        />
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+        necessitatibus, ad alias debitis quia eligendi voluptatibus ipsum sint
+        repellat, earum ex? Et facilis assumenda doloremque ad accusamus quidem
+        vel recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ex libero temporibus architecto veniam totam ad consequatur molestiae
+        esse odio quidem sequi, porro iste est, similique natus molestias nobis,
+        dolorum ducimus.
+      </p>
     </section>
-
-    <section class="hidden">
-      <h3>It's rlly good</h3>
-      <p>This is the last section, see ya later</p>
+    <section class="hidden" id="skills">
+      <div class="container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/html5.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>HTML 5</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/css.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>CSS</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/JS.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>JavaScript</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/Python.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>Python</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/Unity.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>Unity</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="imgs/csharp.png" class="icon" />
+              <!-- TO-DO: add image-->
+            </div>
+            <h3>C#</h3>
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="hidden">
-      <h4>Whats goin on!</h4>
-      <p>JK, the next section is the last section</p>
+    <section class="hidden" id="prExamples">
+      <h1>Project Examples</h1>
+      <!--Add Modal windows with project videos/samples-->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim
+        sequi aspernatur libero, suscipit modi nulla atque, distinctio quasi
+        expedita possimus fuga voluptas voluptate blanditiis? Eligendi nobis
+        perspiciatis officia autem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Velit soluta, eius optio nulla accusantium enim
+        perspiciatis explicabo obcaecati ratione quidem id sunt! Itaque eum
+        exercitationem ab fuga nihil incidunt autem.
+      </p>
     </section>
-    <section class="hidden">
-      <h5>Hello Again!</h5>
-      <p>This is the last section, see ya later</p>
+    <section class="hidden" id="contact">
+      <h1>Contact</h1>
+      <!--Add email form here, for practice-->
     </section>
   </body>
 
