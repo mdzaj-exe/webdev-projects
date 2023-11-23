@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap');
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 .title {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -12,15 +16,21 @@ body {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 
+button{
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+}
 h1{
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 
 p {
   display: flex;
-  justify-content: center;
+  text-align:center; 
   margin: 50px;
   padding: 20px;
 }
@@ -109,6 +119,23 @@ li a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+.modal{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 6;
+}
+
+.close-modal{
+font-size:34px;
+}
+
+.secret{
+  display: none;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -120,6 +147,16 @@ li a:hover {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#000000;
+  z-index: 5;
 }
 
 @media (prefers-reduced-motion) {
