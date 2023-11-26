@@ -1,0 +1,10 @@
+.todo-container {
+  display: flex;
+  margin: 50px;
+  border: 10px solid #3498db;
+}
+
+.todo-container ul {
+  flex-direction: column;
+  margin: 50px;
+}
