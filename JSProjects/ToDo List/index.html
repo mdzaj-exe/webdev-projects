@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
   <header>
+    <h1>[Test Header Here]</h1>
     <!--We may add a nav bar here just for practice-->
-    <h1>*Header Here*</h1>
   </header>
   <body>
     <!--
@@ -23,12 +22,18 @@
       <div>
         <h1>To-Do List</h1>
       </div>
-      <ul>
+      <form id="todo-form">
+        <label for="todo-add">Enter Next Item...</label>
+        <input type="text" id="todo-add" name="toDo" />
+        <input type="submit" />
+      </form>
+      <ul id="tList">
         <li>First Item</li>
         <li>Second Item</li>
         <li>Third Item</li>
         <li>*Test Item Four*</li>
       </ul>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
